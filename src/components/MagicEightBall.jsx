@@ -78,7 +78,7 @@ class MagicEightBall extends React.Component {
                 </div>
                 
                 <p className="desc">
-                    Magic 8 Ball is used for fortune-telling or seeking advice. You can asks a yes-or-no question (e.g. Will I win the lottery in 2016?) and press the button to know the answer.
+                    Magic 8 Ball is used for fortune-telling or seeking advice. You can asks a yes-or-no question (e.g. Will I win the lottery in 2019?) and press the button to know the answer.
                     {/* The Magic 8 Ball is a toy used for fortune-telling or seeking advice. The user asks a yes-or-no question (e.g. Will I win the lottery in 2016?) to the large plastic ball, then turns it over to reveal a written answer which appears on the surface of the toy. The Magic 8-Ball is styled after a Billiards ball. */}
                 </p>
             </div>

@@ -1,4 +1,5 @@
 import React from 'react';
+import '../styles/magic-eight-ball.css';
 
 const inputStyle = {
     width: 235,
@@ -58,19 +59,26 @@ class MagicEightBall extends React.Component {
         const answer = possibleAnswers[this.state.randomIndex]
 
         return (
-            <div>
-                <input
-                    type="text"
-                    value={this.state.userInput}
-                    onChange={this.handleChange}
-                    style={inputStyle} /><br />
-                <button onClick={this.ask}>
-                    Ask the Magic Eight Ball!
-                    </button><br />
-                <h3>Answer:</h3>
-                <p>
-                    {answer}
-                </p>
+            <div className="game-wrapper">
+                <div className="input-wrapper">
+                    <input
+                        type="text"
+                        value={this.state.userInput}
+                        onChange={this.handleChange}
+                        style={inputStyle}
+                    />
+                </div>
+
+                <div className="button-wrapper">
+                    <button onClick={this.ask}> Ask the Magic Eight Ball!</button>
+                </div>
+
+                <div className="answer-wrapper">
+                    <h3>Answer:</h3>
+                    <p className="answer">
+                        {answer}
+                    </p>
+                </div>
             </div>
         );
     }

@@ -1,10 +1,12 @@
 import React from 'react';
-import './app.css';
+import './styles/app.css';
+import MagicEightBall from './components/MagicEightBall';
+
 
 function App() {
   return (
     <div className="App">
-      <h1>HI</h1>
+      <MagicEightBall/>
     </div>
   );
 }
